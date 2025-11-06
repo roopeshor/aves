@@ -225,7 +225,7 @@ class _AppDrawerState extends State<AppDrawer> with WidgetsBindingObserver {
                             fontSize: 38,
                             fontWeight: FontWeight.w300,
                             letterSpacing: canHaveLetterSpacing(context.locale) ? 1 : 0,
-                            fontFeatures: const [FontFeature.enable('smcp')],
+                            fontFeatures: const [FontFeature.disable('smcp')],
                           ),
                         ),
                       ],

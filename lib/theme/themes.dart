@@ -6,7 +6,7 @@ class Themes {
   static const _titleTextStyle = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.normal,
-    fontFeatures: [FontFeature.enable('smcp')],
+    // fontFeatures: [FontFeature.enable('smcp')],
   );
 
   static String asButtonLabel(String s) => s.toUpperCase();

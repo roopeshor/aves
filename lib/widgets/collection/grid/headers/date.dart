@@ -42,8 +42,8 @@ class DaySectionHeader<T> extends StatelessWidget {
     if (date.isYesterday) return l10n.dateYesterday;
 
     final locale = context.locale;
-    if (date.isThisYear) return '${DateFormat.MMMMd(locale).format(date)} (${DateFormat.E(locale).format(date)})';
-    return '${DateFormat.yMMMMd(locale).format(date)} (${DateFormat.E(locale).format(date)})';
+    if (date.isThisYear) return '${DateFormat.MMMd(locale).format(date)}';
+    return '${DateFormat.yMMMd(locale).format(date)}';
   }
 
   @override

@@ -42,7 +42,7 @@ class HighlightTitle extends StatelessWidget {
       shadows: shadows(context),
       fontSize: fontSize,
       letterSpacing: canHaveLetterSpacing(context.locale) ? 1 : 0,
-      fontFeatures: const [FontFeature.enable('smcp')],
+      fontFeatures: const [FontFeature.disable('smcp')],
     );
 
     final colors = context.watch<AvesColorsData>();

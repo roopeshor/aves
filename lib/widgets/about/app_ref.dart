@@ -57,7 +57,7 @@ class AppReference extends StatelessWidget {
         fontSize: 20,
         fontWeight: FontWeight.normal,
         letterSpacing: canHaveLetterSpacing(locale) ? 1 : 0,
-        fontFeatures: const [FontFeature.enable('smcp')],
+        fontFeatures: const [FontFeature.disable('smcp')],
       );
 
   static List<Widget> buildLinks(BuildContext context) {
