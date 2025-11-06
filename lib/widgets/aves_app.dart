@@ -305,6 +305,7 @@ class _AvesAppState extends State<AvesApp> with WidgetsBindingObserver {
                               child: MaterialApp(
                                 navigatorKey: _navigatorKey,
                                 home: home,
+                                debugShowCheckedModeBanner: false,
                                 navigatorObservers: _navigatorObservers,
                                 builder: (context, child) => _decorateAppChild(
                                   context: context,
